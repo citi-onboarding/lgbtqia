@@ -38,6 +38,9 @@ export default class PersonalityController implements Crud {
         const isAnyUndefined = Citi.areValuesUndefined(title, description, id);
         if(isAnyUndefined) return response.status(400).send();
 
+        /* to make the put method more effective (considering we now have nullable columns), I made it so, if the
+        nullable column is undefined, it is to be replaced with a null value, otherwise, this method would
+        work like a patch (the undefined values would remain the same as they were before the put)*/
         const isAnyUndefined1 = Citi.areValuesUndefined(email);
         if(isAnyUndefined1) email = null;
 
