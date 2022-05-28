@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import { News } from '@models/News';
 import { Citi, Crud } from '../global';
-import { User } from '@models/User';
 
 export default class NewsController implements Crud {
 
