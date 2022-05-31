@@ -12,7 +12,6 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
-    scroll-padding-top: 200px;
   }
 
   html {
