@@ -1,15 +1,26 @@
 import styled from 'styled-components'; 
 
-
 export const NewsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 1366px;
+    height: 891px;
+    left: -8px;
+    top: 3072px;
+`;
+
+
+export const NewsCard = styled.div`
     display: flex;
     flex-direction: column;
 
-    // position: absolute;
     width: 557.33px;
     height: 520px;
-    margin-left: 114.73px;
+    // margin-left: 114.73px;
     margin-top: 223.64px;
+    margin-right: 21.69px;
 
     background: #FCFCFC;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
@@ -20,6 +31,12 @@ export const NewsImage = styled.img`
     width: 557.33px;
     height: 222.6px;
     border-radius: 9px 0px 0px 0px;
+`;
+
+export const NewsLine = styled.hr`
+    height: 4.59px;
+    background: #C342DB;
+    border-width: 0;
 `;
 
 export const NewsTitle = styled.h1`
@@ -54,7 +71,7 @@ export const NewsText = styled.p`
 `;
 
 export const NewsLink = styled.a`
-    width: 86.77px;
+    width: 100px;
     height: 36.48px;
     margin-left: 19.33px;
 

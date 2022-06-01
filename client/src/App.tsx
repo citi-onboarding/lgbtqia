@@ -5,11 +5,15 @@ import { GlobalStyle } from './styles/global';
 
 
 import { Home, News } from './components';
+import { NewsContainer } from './components/News/style';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <News/>
+      <NewsContainer>
+        <News/>
+        <News/>
+      </NewsContainer>
       <GlobalStyle/>
     </ThemeProvider>
   );

@@ -1,5 +1,6 @@
 import React from "react";
-import { NewsContainer, NewsImage, NewsTitle, NewsText, NewsLink } from './style';
+import { NewsContainer, NewsCard, NewsImage, NewsLine, NewsTitle, NewsText, NewsLink } from './style';
+import Foto from './photo-test/image-12.png';
 
 type NewsProps = {
     image : string,
@@ -10,11 +11,12 @@ type NewsProps = {
 
 export const News: React.ElementType = () => {
     return(
-        <NewsContainer>
-            <NewsImage src=""/>
+        <NewsCard>
+            <NewsImage src={Foto}/>
+            <NewsLine/>
             <NewsTitle>Protesto no Texas - USA</NewsTitle>
             <NewsText>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem.Lorem ipsumLorem</NewsText>
             <NewsLink>Leia mais</NewsLink>
-        </NewsContainer>
+        </NewsCard>
     );
 }
