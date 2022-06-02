@@ -1,4 +1,4 @@
-import {CardContainer, Description, Info, TermFlag, TermFlag2} from "./style"
+import {CardContainer, Description, Info, MoreInfo, TermFlag, TermFlag2} from "./style"
 import Letter from "../../assets/Q.svg"
 import Flag from "../../assets/flag.png"
 import L from "../../assets/L.svg"
@@ -11,6 +11,7 @@ import Flag2 from "../../assets/flag2.png"
 import Flag3 from "../../assets/flag3.png"
 import Flag4 from "../../assets/flag4.png"
 import Flag5 from "../../assets/flag5.png"
+import Arrow from "../../assets/arrow.svg"
 
 type CardProps = {
     letter: any;
@@ -90,8 +91,11 @@ height: "180.38px", margin: "63.36px 96.07px 74.26px 0px"}}/>
                         <h1>{term}</h1>
                         <img src={flag} alt="bandeira" />
                     </TermFlag2>
-                    
                     <Description>{description}</Description>
+                    <MoreInfo>
+                        <p>Saiba mais sobre esta sigla</p>
+                        <img src={Arrow} alt="" />
+                    </MoreInfo>
                 </Info>
             </CardContainer>
       );

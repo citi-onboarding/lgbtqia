@@ -58,7 +58,8 @@ export const TermFlag = styled.div `
 
 export const Description = styled.p `
         width: 507.33px;
-        height: 137.87px;
+        height: 96.36px !important;
+        margin-bottom: 25.31px;
 
         font-family: 'Rubik';
         font-style: normal;
@@ -75,7 +76,7 @@ export const TermFlag2 = styled.div `
     justify-content: left;
     align-items: flex-end;
     height: 30px;
-    margin: 69.73px 0px 30.3px 0px;
+    margin: 69.73px 0px 20.49px 0px;
     h1 {
         width: 452.22px;
         height: 30px;
@@ -84,14 +85,40 @@ export const TermFlag2 = styled.div `
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
-        line-height: 28px;
 
         color: #101010;
-        margin-right: 15.99px;
+        margin-right: 0px !important;
     }
     img {
         width: 34.92px;
         height: 20.96px;
         align-self: flex-start;
+    }
+`;
+
+export const MoreInfo = styled.div `
+    width: 100%;
+    height: 27.4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+        width: 214.13px;
+        height: 27.4px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 36px;
+
+        /* or 222% */
+
+        color: #222222;
+    }
+    img {
+        width: 16.78px;
+        margin-top: 10px;
     }
 `;

@@ -1,4 +1,4 @@
-import Terms from './terms';
+import Terms from './carousel';
 import {Card} from "./cards"
 
 export {

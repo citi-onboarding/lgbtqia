@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import {StyledCard, Container, Filho, StyledArrowLeft, StyledArrowRight, StyledDiv} from "./styles"
+import {Container, Filho, StyledDots, StyledArrowLeft, StyledArrowRight, StyledDiv} from "./styles"
 import {Card} from "../cards"
 import {lesbian} from "../cards"
 import {gay} from "../cards"
@@ -35,20 +35,12 @@ export default class Carousel extends Component {
         fade: true,
         appendDots: (dots: any) => (
             <StyledDiv>
-            <ul style={{ margin: "100px 0px 0px 0px", bottom: "auto", padding: "0px", width: "120px",
+            <ul style={{ margin: "0px 0px 0px 0px", bottom: "auto", padding: "0px", width: "120px",
                         display: "inline-flex", justifyContent: "space-between"}}> {dots} </ul>
             </StyledDiv>
         ),
         customPaging: (i: any) => (
-            <div
-            style={{
-                width: "30px",
-                height: "30px",
-                color: "blue",
-                border: "1px blue solid"
-            }}
-            >
-            </div>
+          <StyledDots/>
         )
       };
       
@@ -66,39 +58,29 @@ export default class Carousel extends Component {
         <Filho>
           <Slider {...settings} ref={c => (this.slider = c)}>
             <div>
-              <StyledCard>
                 <Card
                 {...lesbian}
                 />
-              </StyledCard>
             </div>
             <div>
-              <StyledCard>
-                <Card
-                  {...gay}
-                  />
-              </StyledCard>
+              <Card
+                {...gay}
+                />
             </div>
             <div>
-              <StyledCard>
               <Card
                 {...bi}
                 />
-              </StyledCard>
             </div>
             <div>
-              <StyledCard>
-              <Card
+            <Card
                 {...trans}
                 />
-              </StyledCard>
             </div>
             <div>
-              <StyledCard>
-              <Card
+            <Card
                 {...queer}
                 />
-              </StyledCard>
             </div>
           </Slider>
         </Filho>
