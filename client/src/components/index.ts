@@ -1,5 +1,7 @@
-import { Home } from './home';
+import Terms from './terms';
+import {Card} from "./cards"
 
 export {
-    Home
+    Terms,
+    Card
 };

@@ -2,14 +2,19 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
-import { Home } from './components';
+
+import { Terms } from './components';
+
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Home/>
+      <Terms/>
       <GlobalStyle/>
     </ThemeProvider>
   );
