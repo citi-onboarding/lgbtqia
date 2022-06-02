@@ -4,16 +4,12 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { Home, News } from './components';
-import { NewsContainer } from './components/News/style';
+import { News } from './components';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <NewsContainer>
-        <News/>
-        <News/>
-      </NewsContainer>
+      <News/>    
       <GlobalStyle/>
     </ThemeProvider>
   );

@@ -7,6 +7,9 @@ export class News {
     id : number;
 
     @Column()
+    image : string;
+
+    @Column()
     title : string;
 
     @Column()
