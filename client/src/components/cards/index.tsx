@@ -1,4 +1,4 @@
-import {CardContainer, Description, Info, MoreInfo, TermFlag, TermFlag2} from "./style"
+import {CardContainer, Description, Info, MoreInfo, TermFlag, TermFlag2} from "./styles"
 import Letter from "../../assets/Q.svg"
 import Flag from "../../assets/flag.png"
 import L from "../../assets/L.svg"

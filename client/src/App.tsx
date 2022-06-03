@@ -9,7 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-import { Terms, Card } from './components';
+import { Carousel, Card, Intro } from './components';
+import { Terms } from "./pages"
 
 
 // type CardProps = {
@@ -33,9 +34,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Terms/>
-      {/* <Card
-      {...trans}
-      /> */}
+      {/* <Intro/>
+      <Carousel/> */}
       <GlobalStyle/>
     </ThemeProvider>
   );
