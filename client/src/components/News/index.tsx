@@ -22,8 +22,7 @@ export const News: React.ElementType = ({image, alt, title, text, link}:NewsProp
     const url = apiAxios;
 
     function getImage() {
-        axios.get('http://localhost:3001/news')
-        // axios.get(`${url}news`)
+        apiAxios.get(`news`)
         .then(response => {
             setNews(response.data)
         })

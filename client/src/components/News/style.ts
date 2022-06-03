@@ -47,7 +47,6 @@ export const NewsContainerText = styled.p`
     color: #000000;
 `;
 
-
 export const NewsCard = styled.div`
     display: flex;
     flex-direction: column;
