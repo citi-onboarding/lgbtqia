@@ -33,6 +33,15 @@ export const Info = styled.div `
     }
 `;
 
+export const Letter = styled.div `
+    width: 10.802342606149342vw;
+    height: 13.20497803806735vw;
+    margin: 4.638360175695461vw 7.03294289897511vw 5.436310395314789vw 0px;
+    /* width: 147.56px;
+    height: 180.38px;
+    margin: 63.36px 96.07px 74.26px 0px; */
+`;
+
 export const TermFlag = styled.div `
     width: 100%;
     display: flex;

@@ -35,7 +35,7 @@ export default class Carousel extends Component {
         fade: true,
         appendDots: (dots: any) => (
             <StyledDiv>
-            <ul style={{ margin: "0px 0px 0px 0px", bottom: "auto", padding: "0px", width: "120px",
+            <ul style={{ margin: "0px 0px 0px 0px", bottom: "auto", padding: "0px", width: "8.784773060029282vw",
                         display: "inline-flex", justifyContent: "space-between"}}> {dots} </ul>
             </StyledDiv>
         ),
@@ -47,7 +47,7 @@ export default class Carousel extends Component {
       return (
         <Container>
         <button className="button" onClick={this.previous} style= {{border: "none",
-                                                                margin: "0px 106px 0px 0px",
+                                                                margin: "0px 7.759882869692533vw 0px 0px",
                                                                 padding: "0px",
                                                                 width: "auto",
                                                                 overflow: "visible",
@@ -85,7 +85,7 @@ export default class Carousel extends Component {
           </Slider>
         </Filho>
         <button className="button" onClick={this.next} style= {{border: "none",
-                                                                margin: "0px 0px 0px 106px",
+                                                                margin: "0px 0px 0px 7.759882869692533vw",
                                                                 padding: "0px",
                                                                 width: "auto",
                                                                 overflow: "visible",

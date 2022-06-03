@@ -1,6 +1,4 @@
-import {CardContainer, Description, Info, MoreInfo, TermFlag, TermFlag2} from "./styles"
-import Letter from "../../assets/Q.svg"
-import Flag from "../../assets/flag.png"
+import {CardContainer, Description, Info, Letter, MoreInfo, TermFlag, TermFlag2} from "./styles"
 import L from "../../assets/L.svg"
 import G from "../../assets/G.svg"
 import B from "../../assets/B.svg"
@@ -69,8 +67,9 @@ export const Card: React.ElementType = ({letter, term, flag, description, trans}
     if (trans === false){
         return (
               <CardContainer>
-                  <img src={letter} alt="letra da sigla" style={{width: "147.56px",
-  height: "180.38px", margin: "63.36px 96.07px 74.26px 0px"}}/>
+                  <Letter>
+                    <img src={letter} alt="letra da sigla" style={{width: "100%"}}/>
+                  </Letter>
                   <Info>
                       <TermFlag>
                           <h1>{term}</h1>
@@ -84,8 +83,9 @@ export const Card: React.ElementType = ({letter, term, flag, description, trans}
     else {
         return (
             <CardContainer>
-                <img src={letter} alt="letra da sigla" style={{width: "147.56px",
-height: "180.38px", margin: "63.36px 96.07px 74.26px 0px"}}/>
+                <Letter>
+                    <img src={letter} alt="letra da sigla" style={{width: "100%"}}/>
+                </Letter>
                 <Info>
                     <TermFlag2>
                         <h1>{term}</h1>
