@@ -1,8 +1,5 @@
 import React from "react";
 import { NewsUpperLine, NewsContainerCard, NewsContainer, NewsContainerText, NewsCard, NewsImage, NewsLine, NewsTitle, NewsText, NewsLink, NewsIcons } from './style';
-// this photo is just a test to see how it looks like -> REMEMBER TO DELETE IT
-import Foto from './photo-test/image-12.png';
-// put these icons in a folder.
 import Arrow from '../../assets/arrow.svg';
 import Siren from '../../assets/siren.svg';
 // import axios to back connection
@@ -12,20 +9,21 @@ import apiAxios from '../../services/api-axios';
 
 type NewsProps = {
     image : string,
+    alt : string,
     title : string,
     text : string,
     link : string
 }
 
-export const News: React.ElementType = ({image, title, text, link}:NewsProps) => {
+export const News: React.ElementType = ({image, alt, title, text, link}:NewsProps) => {
     
     const [news, setNews] = useState<NewsProps[]>();
-    const [news2, setNews2] = useState([]);
 
     const url = apiAxios;
 
     function getImage() {
         axios.get('http://localhost:3001/news')
+        // axios.get(`${url}news`)
         .then(response => {
             setNews(response.data)
         })
@@ -48,7 +46,7 @@ export const News: React.ElementType = ({image, title, text, link}:NewsProps) =>
             <NewsContainerCard>
                 {news?.map((newsInfo) => (
                 <NewsCard>
-                    <NewsImage src={newsInfo?.image}/>
+                    <NewsImage src={newsInfo?.image} alt={newsInfo?.alt}/>
                     <NewsLine/>
                     <NewsTitle>{newsInfo?.title}</NewsTitle>
                     <NewsText>

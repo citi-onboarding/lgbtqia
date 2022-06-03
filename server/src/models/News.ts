@@ -9,6 +9,9 @@ export class News {
     @Column()
     image : string;
 
+    @Column({nullable: true})
+    alt : string;
+
     @Column()
     title : string;
 
