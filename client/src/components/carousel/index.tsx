@@ -2,12 +2,9 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import {Container, SliderContainer, StyledArrowLeft, StyledArrowRight, StyledDiv, StyledDots} from "./styles"
 import {Card} from "../cards"
-import {lesbian} from "../cards"
-import {gay} from "../cards"
-import {bi} from "../cards"
-import {trans} from "../cards"
-import {queer} from "../cards"
+import {lesbian, gay, bi, trans, queer} from "../cards"
 
+const array: any = [lesbian, gay, bi, trans, queer];
 
 export default class Carousel extends Component {
     slider: any;
@@ -47,31 +44,20 @@ export default class Carousel extends Component {
       return (
         <Container>
         <button className="button" onClick={this.previous} style= {{border: "none",
-                                                                margin: "0px 7.759882869692533vw 0px 0px",
-                                                                padding: "0px",
-                                                                width: "auto",
-                                                                overflow: "visible",
-                                                                background: "transparent",}}
+                                                                    margin: "0px 7.759882869692533vw 0px 0px",
+                                                                    padding: "0px",
+                                                                    width: "auto",
+                                                                    overflow: "visible",
+                                                                    background: "transparent",}}
         >
           <StyledArrowLeft/>
         </button>
         <SliderContainer>
           <Slider {...settings} ref={c => (this.slider = c)}>
-            <div>
-              <Card {...lesbian}/>
-            </div>
-            <div>
-              <Card {...gay}/>
-            </div>
-            <div>
-              <Card {...bi}/>
-            </div>
-            <div>
-              <Card {...trans}/>
-            </div>
-            <div>
-              <Card {...queer}/>
-            </div>
+            {array.map((element: any)=> {
+              return(<div>
+                <Card {...element}/>
+              </div>);})}
           </Slider>
         </SliderContainer>
         <button className="button" onClick={this.next} style= {{border: "none",
