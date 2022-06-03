@@ -43,7 +43,7 @@ export const bi: CardProps = {
     term: "Bissexual",
     flag: Flag3,
     description: "Bissexualidade também é uma orientação sexual. Bissexuais são pessoas que"+
-    " se relacionam afetiva e sexualmente tanto com pessoas do mesmo gênero. quanto do gênero oposto"+
+    " se relacionam afetiva e sexualmente tanto com pessoas do mesmo gênero, quanto do gênero oposto"+
     " (sejam essas pessoas cis ou trans).",
     trans: false,
     letterName: "letra B",
