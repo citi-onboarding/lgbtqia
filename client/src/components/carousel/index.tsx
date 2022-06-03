@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import {Container, Filho, StyledDots, StyledArrowLeft, StyledArrowRight, StyledDiv} from "./styles"
+import {Container, SliderContainer, StyledArrowLeft, StyledArrowRight, StyledDiv, StyledDots} from "./styles"
 import {Card} from "../cards"
 import {lesbian} from "../cards"
 import {gay} from "../cards"
@@ -55,35 +55,25 @@ export default class Carousel extends Component {
         >
           <StyledArrowLeft/>
         </button>
-        <Filho>
+        <SliderContainer>
           <Slider {...settings} ref={c => (this.slider = c)}>
             <div>
-                <Card
-                {...lesbian}
-                />
+              <Card {...lesbian}/>
             </div>
             <div>
-              <Card
-                {...gay}
-                />
+              <Card {...gay}/>
             </div>
             <div>
-              <Card
-                {...bi}
-                />
+              <Card {...bi}/>
             </div>
             <div>
-            <Card
-                {...trans}
-                />
+              <Card {...trans}/>
             </div>
             <div>
-            <Card
-                {...queer}
-                />
+              <Card {...queer}/>
             </div>
           </Slider>
-        </Filho>
+        </SliderContainer>
         <button className="button" onClick={this.next} style= {{border: "none",
                                                                 margin: "0px 0px 0px 7.759882869692533vw",
                                                                 padding: "0px",

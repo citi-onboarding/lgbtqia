@@ -1,19 +1,9 @@
 import styled from 'styled-components';
 import ArrowLeft from "../../assets/arrowLeft.svg"
 import ArrowRight from "../../assets/arrowRight.svg"
+import { theme } from "../../styles/theme"
 
 
-export const StyledDiv = styled.div`
-  color: green;
-  display: flex;
-  justify-content: center;
-`;
-
-export const StyledUl = styled.ul`
-  margin: "0px";
-  /* width: "6.588579795022vw" !important; */
-  display: "inline";
-`;
 
 export const Container = styled.div`
   width: 83.0644vw;
@@ -33,7 +23,7 @@ export const Container = styled.div`
 
 `;
 
-export const Filho = styled.div`
+export const SliderContainer = styled.div`
     width: 54.9289897510981vw; 
     height: 23.2796486090776vw;
     /* width: 750.33px; 
@@ -46,7 +36,7 @@ export const Filho = styled.div`
       height: 11.67px !important;
       margin-top: 38.33px !important; */
 
-      background: #EF548C !important;
+      background: ${theme.colors.primary_pink} !important;
       transition: none;
     }
     /* .slick-prev img, .slick-next img{
@@ -81,13 +71,19 @@ export const StyledArrowRight = styled.img`
     }
 `;
 
+export const StyledDiv = styled.div`
+  color: green;
+  display: flex;
+  justify-content: center;
+`;
+
 export const StyledDots = styled.div`
     width: 1.390922401171303vw;
     height: 0.8052708638360175vw;
     /* width: 19px;
     height: 11px; */
 
-    background: #C4C4C4;
+    background: ${theme.colors.grayscale3};
     border-radius: 0.40263543191800877vw;
     margin-top: 2.781844802342606vw;
     /* border-radius: 5.5px;
