@@ -41,10 +41,10 @@ export const Filho = styled.div`
     ul .slick-active div {
       width: 0.8543191800878478vw !important;
       height: 0.8543191800878478vw !important;
-      margin-top: 2.855051244509517vw !important;
+      margin-top: 2.70vw !important;
       /* width: 11.67px !important;
       height: 11.67px !important;
-      margin-top: 39px !important; */
+      margin-top: 38.33px !important; */
 
       background: #EF548C !important;
       transition: none;
