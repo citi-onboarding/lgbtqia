@@ -1,15 +1,5 @@
 import {CardContainer, Description, Info, Letter, MoreInfo, TermFlag, TermFlag2} from "./styles"
-import L from "../../assets/L.svg"
-import G from "../../assets/G.svg"
-import B from "../../assets/B.svg"
-import T from "../../assets/T.svg"
-import Q from "../../assets/Q.svg"
-import Flag1 from "../../assets/flag1.png"
-import Flag2 from "../../assets/flag2.png"
-import Flag3 from "../../assets/flag3.png"
-import Flag4 from "../../assets/flag4.png"
-import Flag5 from "../../assets/flag5.png"
-import Arrow from "../../assets/arrow.svg"
+import { L, G, B, T, Q, Flag1, Flag2, Flag3, Flag4, Flag5, Arrow } from "../../assets"
 
 type CardProps = {
     letter: any;

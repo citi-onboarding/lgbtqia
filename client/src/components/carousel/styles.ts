@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import ArrowLeft from "../../assets/arrowLeft.svg"
-import ArrowRight from "../../assets/arrowRight.svg"
+import {ArrowLeft, ArrowRight} from "../../assets"
 import { theme } from "../../styles/theme"
 
 
