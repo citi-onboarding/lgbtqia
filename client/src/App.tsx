@@ -6,11 +6,13 @@ import { GlobalStyle } from './styles/global';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Terms } from "./pages"
+import { Footer } from './components';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Terms/>
+      <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
   );
