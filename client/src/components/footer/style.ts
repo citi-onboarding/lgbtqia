@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 300px;
   font-family: 'Rubik';
 `
@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
 export const FooterContent = styled.div`
   color: #fff;
   background-color: #1C1C1C;
-  width: 100vw;
+  width: 100%;
   height: 240px;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ export const FooterSignature = styled.div`
   display: flex;
   color: #7F7F7F;
   background-color: #121212;
-  width: 100vw;
+  width: 100%;
   height: 62px;
   align-items: center;
   justify-content: flex-end;
