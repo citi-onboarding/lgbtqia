@@ -12,4 +12,12 @@ export class Projects {
     @Column()
     description: string
 
+    @Column()
+    image: string
+
+    @Column({nullable: true})
+    alt: string
+
+    @Column()
+    link: string
 }
