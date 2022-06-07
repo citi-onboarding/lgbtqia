@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
+import { News } from './components';
 import { Projects } from './components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,10 +13,12 @@ import { Footer } from './components';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Terms/>
       <GlobalStyle/>
+      <Terms/>
+      <News/>    
       <Projects/>
       <Footer/>
+      <GlobalStyle/>
     </ThemeProvider>
   );
 }

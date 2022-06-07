@@ -7,6 +7,12 @@ export class News {
     id : number;
 
     @Column()
+    image : string;
+
+    @Column({nullable: true})
+    alt : string;
+
+    @Column()
     title : string;
 
     @Column()
