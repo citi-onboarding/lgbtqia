@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global';
 export default class ProjectsController implements Crud {
 
     async create(request: Request, response: Response){
-        const {name, description} = request.body;
+        const {name, description, image, alt, link} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(name, description);
+        const isAnyUndefined = Citi.areValuesUndefined(name, description, image, link);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newProjects = {name, description};
+        const newProjects = {name, description, image, alt, link};
         const {httpStatus, message} = await Citi.insertIntoDatabase(Projects, newProjects);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class ProjectsController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {name, description} = request.body;
+        const {name, description, image, alt, link} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(name, description);
+        const isAnyUndefined = Citi.areValuesUndefined(name, description, image, link);
         if(isAnyUndefined) return response.status(400).send();
 
-        const projectsWithUpdatedValues = {name, description};
+        const projectsWithUpdatedValues = {name, description, image, alt, link};
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Projects, id, projectsWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
