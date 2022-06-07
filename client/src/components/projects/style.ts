@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(180deg, #FFF2F6 9.23%, rgba(255, 242, 246, 0) 82.02%);
 
   img{
@@ -29,7 +29,7 @@ export const ProjectsSpace = styled.div`
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 76.32px 0px 123.81px 117.04px;
 `;
 
