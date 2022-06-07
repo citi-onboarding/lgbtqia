@@ -5,6 +5,9 @@ import { GlobalStyle } from './styles/global';
 
 
 import { News } from './components';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Terms } from "./pages"
 import { Footer } from './components';
 
 function App() {
@@ -12,7 +15,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <News/>    
       <GlobalStyle/>
+      <Terms/>
       <Footer/>
+      <GlobalStyle/>
     </ThemeProvider>
   );
 }
