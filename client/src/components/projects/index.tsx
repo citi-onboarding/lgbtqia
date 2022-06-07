@@ -23,7 +23,7 @@ export const Projects: React.ElementType = ({name, description, image, alt, link
     useEffect(() => {
         getInfos();
         console.log(projects);
-    }, []);
+    });
 
     return(
         <>
