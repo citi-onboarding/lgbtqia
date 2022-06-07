@@ -15,7 +15,7 @@ export class Projects {
     @Column()
     image: string
 
-    @Column()
+    @Column({nullable: true})
     alt: string
 
     @Column()
