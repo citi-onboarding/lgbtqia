@@ -4,6 +4,7 @@ import { Card } from "./cards";
 import { Intro } from "./intro";
 import { Footer } from './footer';
 import { News } from './News';
+import { Personality } from './personality';
 
 export {
     Carousel,
@@ -11,5 +12,6 @@ export {
     Intro,
     News,
     Projects,
-    Footer
+    Footer,
+    Personality
 };
