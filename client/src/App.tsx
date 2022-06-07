@@ -13,12 +13,12 @@ import { Footer } from './components';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <News/>    
       <GlobalStyle/>
       <Terms/>
-      <GlobalStyle/>
+      <News/>    
       <Projects/>
       <Footer/>
+      <GlobalStyle/>
     </ThemeProvider>
   );
 }

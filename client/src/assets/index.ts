@@ -11,7 +11,7 @@ import Flag2 from "./flag2.png"
 import Flag3 from "./flag3.png"
 import Flag4 from "./flag4.png"
 import Flag5 from "./flag5.png"
-import Arrow from "./arrow.svg"
+import Arrow from "./newsArrow.svg"
 import ArrowLeft from "./arrowLeft.svg"
 import ArrowRight from "./arrowRight.svg"
 

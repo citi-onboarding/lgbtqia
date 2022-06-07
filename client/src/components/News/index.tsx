@@ -1,6 +1,6 @@
 import React from "react";
 import { NewsUpperLine, NewsContainerCard, NewsContainer, NewsContainerText, NewsCard, NewsImage, NewsLine, NewsTitle, NewsText, NewsLink, NewsIcons } from './style';
-import Arrow from '../../assets/arrow.svg';
+import NewsArrow from '../../assets/newsArrow.svg';
 import Siren from '../../assets/siren.svg';
 // import axios to back connection
 import axios from 'axios';
@@ -51,7 +51,7 @@ export const News: React.ElementType = ({image, alt, title, text, link}:NewsProp
                     <NewsText>
                         {newsInfo?.text}
                     </NewsText>
-                    <NewsLink href={newsInfo?.link} target='blank'>Ler mais <NewsIcons src={Arrow}/></NewsLink>
+                    <NewsLink href={newsInfo?.link} target='blank'>Ler mais <NewsIcons src={NewsArrow}/></NewsLink>
                 </NewsCard>
                 ))}
     

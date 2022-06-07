@@ -14,9 +14,10 @@ export const NewsContainerCard = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 667.36px;
     left: -8px;
     margin-top: 0px;
+    min-height: 667.36px;
+    max-height: 1000000px;
 `;
 
 export const NewsUpperLine = styled.hr`
@@ -52,11 +53,11 @@ export const NewsCard = styled.div`
     flex-direction: column;
     width: 557.33px;
     height: 520px;
-    margin-top: 14px;
     margin-right: 21.69px;
     background: #FCFCFC;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    margin-bottom: 20px;
 `;
 
 export const NewsImage = styled.img`
