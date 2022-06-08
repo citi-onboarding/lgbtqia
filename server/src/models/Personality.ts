@@ -4,10 +4,13 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 export class Personality {
 
     @PrimaryGeneratedColumn()
-    id: number
+    id: number;
 
     @Column()
-    title: string
+    image : string;
+
+    @Column()
+    title: string;
 
     @Column()
     description: string

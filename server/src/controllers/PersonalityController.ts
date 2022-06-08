@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class PersonalityController implements Crud {
 
     async create(request: Request, response: Response){
-        const {title, description, email, youtube, instagram} = request.body;
+        const {image, title, description, email, youtube, instagram} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(title, description);
+        const isAnyUndefined = Citi.areValuesUndefined(image, title, description);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newPersonality = { title, description, email, youtube, instagram };
+        const newPersonality = { image, title, description, email, youtube, instagram };
         const {httpStatus, message} = await Citi.insertIntoDatabase(Personality, newPersonality);
 
         return response.status(httpStatus).send({ message });
@@ -33,9 +33,9 @@ export default class PersonalityController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        let { title, description, email, youtube, instagram } = request.body;
+        let { image, title, description, email, youtube, instagram } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(title, description, id);
+        const isAnyUndefined = Citi.areValuesUndefined(image, title, description, id);
         if(isAnyUndefined) return response.status(400).send();
 
         /* to make the put method more effective (considering we now have nullable columns), I made it so, if the
@@ -50,11 +50,9 @@ export default class PersonalityController implements Crud {
         const isAnyUndefined3 = Citi.areValuesUndefined(instagram);
         if(isAnyUndefined3) instagram = null;
 
-        const personalityWithUpdatedValues = { title, description, email, youtube, instagram };
+        const personalityWithUpdatedValues = { image, title, description, email, youtube, instagram };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Personality, id, personalityWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
     }
-
-    
 }
