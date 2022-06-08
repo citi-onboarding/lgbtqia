@@ -34,7 +34,6 @@ export const News: React.ElementType = ({image, alt, title, text, link}:NewsProp
         console.log(news);
     }, []);
 
-
     return(
         <>
             <NewsContainer>

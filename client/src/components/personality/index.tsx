@@ -1,11 +1,37 @@
 import React from "react";
 import { Container, PersonalityContainerText, PersonalityTitle, PernalityText, PersonalityContainer, PeronalityCard, PersonalityImage, PersonalityName, PersonalityDdescription, PersonalityIconIg, PersonalityLink, PersonalityIconYt, PersonalityButton, ButtonText, ButtonArrow } from "./style";
+// REMEMBER TO DELETE THIS IMAGE
 import Photo from './img/lorelay.png';
 import Instagram from '../../assets/PersonalityInstagram.svg'
 import Youtube from '../../assets/personalityYoutube.svg'
 import Arrow from '../../assets/personalityArrow.svg'
+import apiAxios from '../../services/api-axios';
+import { useState, useEffect } from 'react';
 
-export const Personality: React.ElementType = () => {
+type PersonalityProps = {
+    title : string,
+    description : string,
+    email : string,
+    youtube : string,
+    instagram : string
+}
+
+export const Personality: React.ElementType = ({title, description, email, youtube, instagram}:PersonalityProps) => {
+
+    const [personality, setpersonality] = useState<PersonalityProps[]>();
+
+    function getInfo() {
+        apiAxios.get(`personality`)
+        .then(response => {
+            setpersonality(response.data)
+        })
+        .catch(error => console.log(error))
+    };
+
+    useEffect(() => {
+        getInfo();
+        console.log(personality);
+    }, []);
 
     return(
         <>
