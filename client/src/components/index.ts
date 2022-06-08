@@ -3,6 +3,8 @@ import { Card } from "./cards";
 import Carousel from './carousel';
 import { Intro } from "./intro";
 import { Footer } from './footer';
+import { News } from './News';
+import { Projects } from './projects';
 
 
 export {
@@ -10,5 +12,7 @@ export {
     Card,
     Carousel,
     Intro,
-    Footer
+    Footer,
+    News,
+    Projects
 };
