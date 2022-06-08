@@ -1,11 +1,14 @@
-import Carousel from './carousel';
+import { Banner } from './banner';
 import { Card } from "./cards";
+import Carousel from './carousel';
 import { Intro } from "./intro";
 import { Footer } from './footer';
 
+
 export {
-    Carousel,
+    Banner,
     Card,
+    Carousel,
     Intro,
     Footer
 };
