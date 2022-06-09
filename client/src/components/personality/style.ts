@@ -129,7 +129,7 @@ export const PersonalityIconYt = styled.img`
     margin-bottom: 25.93px;
 `;
 
-export const PersonalityButton = styled.button`
+export const PersonalityButton = styled.a`
     display: flex;
     flex-direction: row;
     align-items: center;
