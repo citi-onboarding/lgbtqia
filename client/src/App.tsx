@@ -9,11 +9,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Terms } from "./pages"
 import { Footer } from './components';
+import { Navbar } from './components';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
+      <Navbar/>
       <Terms/>
       <News/>    
       <Projects/>

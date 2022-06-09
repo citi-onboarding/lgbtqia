@@ -31,7 +31,7 @@ export const Projects: React.ElementType = ({name, description, image, alt, link
             <ProjectsLine/>
             <ProjectsSpace>
                 <ProjectsPresentation>
-                        <h3>Conheça <b>projetos aliados</b></h3>
+                        <h3 id="Projetos">Conheça <b>projetos aliados</b></h3>
                         <p>Todo mês, damos visibilidade para algum projeto que tenha como objetivo dar suporte à causa LGBTQIA+ de alguma maneira. O objetivo de dar visibilidade aos projetos da comunidade é que os mesmos são impulsionados para mais ambientes, garantindo a maior captação de recursos, consequentemente.</p>
                 </ProjectsPresentation>
                 {projects?.map((projectsInfo) => (

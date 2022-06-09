@@ -4,7 +4,7 @@ import { Container, Description } from "./styles"
 export const Intro: React.ElementType = () => {
     return (
         <Container>
-            <h1>Conheça a sigla <span>LGBTQQICAPF2K+</span></h1>
+            <h1 id="Sigla">Conheça a sigla <span>LGBTQQICAPF2K+</span></h1>
             <Description>
                 <p>LGBTQIA+ é o movimento político e social que defende a diversidade e busca mais representatividade e direitos para essa população. A sigla demonstra a luta por mais igualdade e respeito à diversidade.
                     <br/>

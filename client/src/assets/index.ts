@@ -15,14 +15,15 @@ import Arrow from "./newsArrow.svg"
 import ArrowLeft from "./arrowLeft.svg"
 import ArrowRight from "./arrowRight.svg"
 
-import facebookLogo from './facebookLogo.svg';
-import instagramLogo from './instagramLogo.svg';
-import lgbtLogo from './lgbtLogo.svg';
-import youtubeLogo from './youtubeLogo.svg';
-import verticalBar from './verticalBar.svg';
-import citiLogoS from './citiLogoS.svg';
-import heartVector from './heartVector.svg';
+import FacebookLogo from './facebookLogo.svg';
+import InstagramLogo from './instagramLogo.svg';
+import LgbtLogo from './lgbtLogo.svg';
+import YoutubeLogo from './youtubeLogo.svg';
+import VerticalBar from './verticalBar.svg';
+import CitiLogoS from './citiLogoS.svg';
+import HeartVector from './heartVector.svg';
+import LgbtLogoNav from './LgbtLogoNav.svg';
 
 export {
-    LogoNatrape, PeopleImage, Arrow, ArrowLeft, ArrowRight, L, G, B, T, Q, Flag1, Flag2, Flag3, Flag4, Flag5, facebookLogo, instagramLogo, lgbtLogo, youtubeLogo, verticalBar, citiLogoS,heartVector
+    LogoNatrape, PeopleImage, Arrow, ArrowLeft, ArrowRight, L, G, B, T, Q, Flag1, Flag2, Flag3, Flag4, Flag5, FacebookLogo, InstagramLogo, LgbtLogo, YoutubeLogo, VerticalBar, CitiLogoS, HeartVector, LgbtLogoNav
 }
