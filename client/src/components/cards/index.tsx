@@ -88,10 +88,10 @@ export const Card: React.ElementType = ({letter, term, flag, description, trans,
                         <img src={flag} alt={"bandeira " + term} />
                     </TermFlag2>
                     <Description>{description}</Description>
-                    <MoreInfo>
-                        <p>Saiba mais sobre esta sigla</p>
+                    {/* <MoreInfo>
+                        <a href="https://transcendemos.com.br/transcendemosexplica/trans/">Saiba mais sobre esta sigla</a>
                         <img src={Arrow} alt="seta para a direita" />
-                    </MoreInfo>
+                    </MoreInfo> */}
                 </Info>
             </CardContainer>
       );

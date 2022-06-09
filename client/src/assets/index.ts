@@ -27,10 +27,7 @@ import LogoNatrape from './natrape.png';
 import PeopleImage from './people.png';
 
 //footer
-import FacebookLogo from './facebookLogo.svg';
-import InstagramLogo from './instagramLogo.svg';
 import LgbtLogo from './lgbtLogo.svg';
-import YoutubeLogo from './youtubeLogo.svg';
 import VerticalBar from './verticalBar.svg';
 import CitiLogoS from './citiLogoS.svg';
 import HeartVector from './heartVector.svg';
@@ -52,7 +49,7 @@ export {
     LogoNatrape, PeopleImage,
 
     //footer
-    FacebookLogo, InstagramLogo, LgbtLogo, YoutubeLogo, VerticalBar, CitiLogoS, HeartVector,
+    LgbtLogo, VerticalBar, CitiLogoS, HeartVector,
 
     //navbar
     LgbtLogoNav,

@@ -135,7 +135,7 @@ export const MoreInfo = styled.div `
     justify-content: flex-start;
     align-items: center;
 
-    p {
+    a {
         width: 15.675695461200586vw;
         height: 2.005856515373353vw;
         /* width: 214.13px;

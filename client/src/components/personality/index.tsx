@@ -62,7 +62,7 @@ export const Personality: React.ElementType = ({image, title, description, email
                     </PersonalityCard>
                     ))}
 
-                    <PersonalityButton><ButtonText>Conheça mais aliades</ButtonText><ButtonArrow src={Arrow}/></PersonalityButton>
+                    <PersonalityButton href="https://linktr.ee/conhecaqueer" target='blank'><ButtonText>Conheça mais aliades</ButtonText><ButtonArrow src={Arrow}/></PersonalityButton>
                 </PersonalityContainer>
 
             </Container>
