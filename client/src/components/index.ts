@@ -5,6 +5,7 @@ import { History } from './history';
 import { Intro } from "./intro";
 import { Footer } from './footer';
 import { News } from './News';
+import { Navbar } from './navbar';
 import { Personality } from './personality';
 import { Projects } from './projects';
 
@@ -16,7 +17,8 @@ export {
     History,
     Intro,
     News,
-    Footer,
+    Projects,
     Personality,
-    Projects
-};
+    Footer,
+    Navbar,
+}

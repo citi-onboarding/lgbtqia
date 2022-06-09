@@ -35,6 +35,9 @@ export const FooterSocialMedia = styled.div`
   width: 176.59px;
   display: flex;
   justify-content: space-between;
+    img:hover {
+      filter: invert(64%) sepia(66%) saturate(5668%) hue-rotate(309deg) brightness(99%) contrast(89%);
+    }
 `
 
 export const FooterSignature = styled.div`

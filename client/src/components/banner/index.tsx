@@ -35,7 +35,7 @@ export const Banner: React.ElementType = () => {
     <>
         <Container>
             <Info>
-                <h1>
+                <h1 id="Causa">
                     {banner?.title}
                 </h1>
                 <h2>

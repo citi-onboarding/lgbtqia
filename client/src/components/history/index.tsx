@@ -6,7 +6,7 @@ export const History = () => {
       <>
         <HistoryContainer>
           <HistoryIntro>
-            <h1><b>História e evolução</b> do movimento</h1>
+            <h1 id="História"><b>História e evolução</b> do movimento</h1>
             <h3>LGBTQIA+ é o movimento político e social que defende a diversidade e busca mais representatividade e direitos para essa população. A sigla demonstra a luta por mais igualdade e respeito à diversidade. <br/> <b>Cada letra representa um grupo de pessoas.</b></h3>
           </HistoryIntro>
           <HistoryFirstCard>
