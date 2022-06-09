@@ -3,15 +3,12 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
-//Terms
-import { News } from './components';
-import { Projects } from './components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Terms } from "./pages"
 import { Personality } from './components';
 
-import { Banner, Footer } from './components';
+import { Banner, Footer, News, Projects, History } from './components';
 
 function App() {
   return (
@@ -21,6 +18,8 @@ function App() {
       <Terms/>
       <News/>
       <Personality/>    
+      <History/>
+      <News/>    
       <Projects/>
       <Footer/>
       <GlobalStyle/>

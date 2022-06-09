@@ -1,5 +1,6 @@
-import LogoNatrape from './natrape.png';
-import PeopleImage from './people.png';
+//banner
+import BannerImg from "./banner.png"
+import Mouse from "./mouse.svg"
 
 //terms
 import L from "./L.svg"
@@ -16,6 +17,15 @@ import Arrow from "./newsArrow.svg"
 import ArrowLeft from "./arrowLeft.svg"
 import ArrowRight from "./arrowRight.svg"
 
+//history
+import PeoplePicture from './peoplePicture.png';
+import Protest from './protest.png';
+import HistoryArrow from './historyArrow.png';
+
+//projects
+import LogoNatrape from './natrape.png';
+import PeopleImage from './people.png';
+
 //footer
 import facebookLogo from './facebookLogo.svg';
 import instagramLogo from './instagramLogo.svg';
@@ -25,19 +35,19 @@ import verticalBar from './verticalBar.svg';
 import citiLogoS from './citiLogoS.svg';
 import heartVector from './heartVector.svg';
 
-import BannerImg from "./banner.png"
-import Mouse from "./mouse.svg"
-
 export {
+    //banner
+    BannerImg, Mouse,
 
-    LogoNatrape, PeopleImage,
-    
     //terms
     Arrow, ArrowLeft, ArrowRight, L, G, B, T, Q, Flag1, Flag2, Flag3, Flag4, Flag5,
-    
-    //footer
-    facebookLogo, instagramLogo, lgbtLogo, youtubeLogo, verticalBar, citiLogoS, heartVector,
 
-    //banner
-    BannerImg, Mouse
+    //history
+    PeoplePicture, Protest, HistoryArrow,
+    
+    //projects
+    LogoNatrape, PeopleImage,
+
+    //footer
+    facebookLogo, instagramLogo, lgbtLogo, youtubeLogo, verticalBar, citiLogoS, heartVector
 }
