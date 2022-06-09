@@ -13,6 +13,7 @@ export const PersonalityContainerText = styled.div`
     width: 100%;
     height: 155px;
     align-items: center;
+    margin-top: 100px;
 `;
 
 export const PersonalityTitle = styled.h1`
@@ -29,7 +30,7 @@ export const PersonalityTitle = styled.h1`
     color: #000000;
 `;
 
-export const PernalityText = styled.p`
+export const PersonalityText = styled.p`
     width: 814.88px;
     height: 79.58px;
     left: 282.37px;
@@ -48,21 +49,17 @@ export const PersonalityContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    /* align-items: center; */
-    /* background: linear-gradient(#FFFFFF, #FFF2F6); */
-    /* background: linear-gradient(180deg, rgba(255, 224, 235, 0) 0%, #FFF2F6 96.06%); */
     height: 863px;
     margin-top: 67.73px;
 `;
 
-export const PeronalityCard = styled.div`
+export const PersonalityCard = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 556.76px;
     height: 272.22px;
     margin-left: 115.43px;
-    /* margin-top: 67.73px; */
     margin-top: 0px;
     margin-bottom: -70.11px;
     margin-right: -84.04px;
@@ -85,13 +82,11 @@ export const PersonalityName = styled.h2`
     height: 32.13px;
     margin-left: 16.15px;
     margin-top: 26.93px;
-
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-
     color: #101010;
 `;
 
@@ -100,40 +95,36 @@ export const PersonalityDdescription = styled.p`
     height: 94px;
     margin-left: 180.36px;
     margin-top: -135px;
-
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 36px;
-
     color: #222222;
 `;
 
 export const PersonalityIconIg = styled.img`
     margin-left: -483.5px;
-    margin-bottom: 32.93px;
+    margin-bottom: 25.93px;
 `;
 
 export const PersonalityLink = styled.a`
     width: 104.01px;
     height: 25.48px;
-    margin-top: 3.5px;
+    margin-top: 5.5px;
     margin-left: 11.66px;
-    margin-bottom: 30.93px;
-
+    margin-bottom: 25.93px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 36px;
-
     color: #222222;
 `;
 
 export const PersonalityIconYt = styled.img`
     margin-left: 53.67px;
-    margin-bottom: 32.93px;
+    margin-bottom: 25.93px;
 `;
 
 export const PersonalityButton = styled.button`
