@@ -6,16 +6,19 @@ import { GlobalStyle } from './styles/global';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Terms } from "./pages"
+import { Personality } from './components';
+
 import { Banner, Footer, News, Projects, History } from './components';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Banner/>
       <GlobalStyle/>
+      <Banner/>
       <Terms/>
       <History/>
-      <News/>    
+      <News/>
+      <Personality/>    
       <Projects/>
       <Footer/>
       <GlobalStyle/>

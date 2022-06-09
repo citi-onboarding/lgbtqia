@@ -5,6 +5,7 @@ import { History } from './history';
 import { Intro } from "./intro";
 import { Footer } from './footer';
 import { News } from './News';
+import { Personality } from './personality';
 import { Projects } from './projects';
 
 
@@ -14,7 +15,8 @@ export {
     Carousel,
     History,
     Intro,
-    Footer,
     News,
+    Footer,
+    Personality,
     Projects
 };
