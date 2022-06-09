@@ -69,9 +69,9 @@ export const PersonalityCard = styled.div`
 `;
 
 export const PersonalityImage = styled.img`
-    width: 159.84px;
-    height: 170px;
-    margin-left: 5px;
+    width: 149.84px;
+    height: 160px;
+    margin-left: 13px;
     margin-top: 10px;
     filter: drop-shadow(0px 1px 20px rgba(123, 46, 221, 0.46));
     border-radius: 7px;
@@ -80,7 +80,7 @@ export const PersonalityImage = styled.img`
 export const PersonalityName = styled.h2`
     width: 202.25px;
     height: 32.13px;
-    margin-left: 16.15px;
+    margin-left: 27.15px;
     margin-top: 26.93px;
     font-family: 'Rubik';
     font-style: normal;
@@ -93,7 +93,7 @@ export const PersonalityName = styled.h2`
 export const PersonalityDdescription = styled.p`
     width: 326.21px;
     height: 94px;
-    margin-left: 180.36px;
+    margin-left: 190.36px;
     margin-top: -135px;
     font-family: 'Rubik';
     font-style: normal;
@@ -104,14 +104,14 @@ export const PersonalityDdescription = styled.p`
 `;
 
 export const PersonalityIconIg = styled.img`
-    margin-left: -483.5px;
+    margin-left: -499.5px;
     margin-bottom: 25.93px;
 `;
 
 export const PersonalityLink = styled.a`
     width: 104.01px;
     height: 25.48px;
-    margin-top: 5.5px;
+    margin-top: 7.5px;
     margin-left: 11.66px;
     margin-bottom: 25.93px;
     font-family: 'Rubik';

@@ -49,10 +49,16 @@ export const Personality: React.ElementType = ({image, title, description, email
                         <PersonalityImage src={personalityInfo?.image} alt={personalityInfo?.title}/>
                         <PersonalityName>{personalityInfo?.title}</PersonalityName>
                         <PersonalityDdescription>{personalityInfo?.description}</PersonalityDdescription>
-                        <PersonalityIconIg src={Instagram}/>
-                        <PersonalityLink href="https://www.instagram.com/lorelay_fox/" target='blank'>{personalityInfo.instagram}</PersonalityLink>
-                        <PersonalityIconYt src={Youtube}/>
-                        <PersonalityLink href="https://www.youtube.com/c/lorelayfox" target='blank'>{personalityInfo.youtube}</PersonalityLink>
+                        
+                        {personalityInfo.instagram && <><PersonalityIconIg src={Instagram}/>
+                        <PersonalityLink>{personalityInfo.instagram}</PersonalityLink> </>}
+                        
+                        {personalityInfo.youtube && <><PersonalityIconYt src={Youtube}/>
+                        <PersonalityLink >{personalityInfo.youtube}</PersonalityLink></>}
+
+                        {personalityInfo.email && <><PersonalityIconYt src={Email}/>
+                        <PersonalityLink>{personalityInfo.email}</PersonalityLink></>}
+
                     </PersonalityCard>
                     ))}
 
