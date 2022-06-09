@@ -38,7 +38,7 @@ export const Projects: React.ElementType = ({name, description, image, alt, link
                 <ProjectsInstitution>
                     <ProjectsInstitutionBottom>
                         <img src={projectsInfo?.image} alt={projectsInfo?.alt}/>
-                        <ProjectsButton href={projectsInfo?.link}>Conheça a <b>{projectsInfo?.name}</b></ProjectsButton>
+                        <ProjectsButton href={projectsInfo?.link} target='blank'>Conheça a <b>{projectsInfo?.name}</b></ProjectsButton>
                     </ProjectsInstitutionBottom>
                     <p>{projectsInfo?.description}</p>
                 </ProjectsInstitution>
