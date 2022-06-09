@@ -11,15 +11,20 @@ import { Terms } from "./pages";
 import { Footer } from './components';
 import { Navbar } from './components';
 import { Banner } from './components';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Personality } from './components';
+import { History } from './components';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
       <Banner/>
-      <GlobalStyle/>
       <Terms/>
-      <News/>    
+      <History/>
+      <News/>
+      <Personality/>    
       <Projects/>
       <Footer/>
       <GlobalStyle/>
