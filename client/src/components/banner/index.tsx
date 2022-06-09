@@ -49,14 +49,14 @@ export const Banner: React.ElementType = () => {
                     </p>
                 </h2>
                 <ScrollDown>
-                    <img src={Mouse} alt="mouse com seta para baixo" style={{margin: "10px 0px 0px 0px"}}/>
+                    <img src={Mouse} alt="mouse com seta para baixo" style={{margin: "0.7320644216691069vw 0px 0px 0px", height: "4.366764275256222vw"}}/>
                     <ScrollText>
                         <h3>Role para baixo</h3>
                         <p>Scroll down</p>
                     </ScrollText>
                 </ScrollDown>
             </Info>
-            <img src={BannerImg} alt="mão segurando uma bandeira branca e mão segurando um megafone" width="603.27px"/>
+            <img src={BannerImg} alt="mão segurando uma bandeira branca e mão segurando um megafone" style={{width: "44.16325036603221vw"}}/>
         </Container>
    </>
     );
