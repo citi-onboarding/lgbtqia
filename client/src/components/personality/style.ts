@@ -109,10 +109,12 @@ export const PersonalityIconIg = styled.img`
 `;
 
 export const PersonalityLink = styled.a`
-    width: 104.01px;
+    /* width: 104.01px; */
+    min-width: 1.01px;
     height: 25.48px;
     margin-top: 7.5px;
     margin-left: 11.66px;
+    /* margin-right: 40px; */
     margin-bottom: 25.93px;
     font-family: 'Rubik';
     font-style: normal;

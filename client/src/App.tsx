@@ -13,13 +13,12 @@ import { Banner, Footer, News, Projects, History } from './components';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Banner/>
       <GlobalStyle/>
+      <Banner/>
       <Terms/>
+      <History/>
       <News/>
       <Personality/>    
-      <History/>
-      <News/>    
       <Projects/>
       <Footer/>
       <GlobalStyle/>
