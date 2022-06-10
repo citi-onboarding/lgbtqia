@@ -3,8 +3,7 @@ import NewsController from '@controllers/NewsController';
 import ProjectsController from '@controllers/ProjectsController';
 import PersonalityController from '@controllers/PersonalityController';
 import BannerController from '@controllers/BannerController';
-
-const controller = require("../controllers/controllers");
+import { getIndex } from '@controllers/controllers';
 const routes = express.Router();
 const newsController = new NewsController();
 const projectsController = new ProjectsController();
@@ -12,7 +11,7 @@ const bannerController = new BannerController();
 const personalityController = new PersonalityController();
 
 routes.get('/', (request, response) => {
-    controller.getIndex(request, response)
+  getIndex(request, response)
   });
 //News
 routes.post('/news', newsController.create);

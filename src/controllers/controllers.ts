@@ -1,5 +1,5 @@
-const path = require('path');
 
-exports.getIndex = (request, response) => {
-    response.sendFile(path.join(__dirname, '../public/index.html'));
+export const getIndex = (request, response) => {
+    response.sendFile('/public/index.html', {root: __dirname })
 }
+
